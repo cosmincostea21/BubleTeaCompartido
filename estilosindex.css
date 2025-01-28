@@ -80,3 +80,22 @@ header h1{
     font-weight: 400;
     font-style: normal;
 }
+
+#anuncio{
+    /*fixed hace que la caja esté posicionada de manera fija sobre todo el contenido de la pantalla*/
+    position: fixed;
+
+    /*Lugar exacto donde se va a encontrar la caja*/
+    top: 50px; /*50px ya que quiero que esté justo de la barra de navegación*/
+    right: 0;
+    z-index: 1;
+
+    /*El tamaño de la caja se ajusta al tamaño de l aimagen*/
+    width: fit-content;
+    height: fit-content;
+}
+
+#anuncio img{
+    width: 20vh;
+    height: 20vh;
+}
