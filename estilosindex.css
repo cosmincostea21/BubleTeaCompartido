@@ -87,7 +87,37 @@ header h1{
 }
 
 
+#anuncio{
+    /*fixed hace que la caja esté posicionada de manera fija sobre todo el contenido de la pantalla*/
+    position: fixed;
 
+    /*Lugar exacto donde se va a encontrar la caja*/
+    top: 50px; /*50px ya que quiero que esté justo de la barra de navegación*/
+    right: 0;
+    z-index: 1;
+
+    /*El tamaño de la caja se ajusta al tamaño de l aimagen*/
+    width: fit-content;
+    height: fit-content;
+}
+
+#anuncio img{
+    width: 20vh;
+    height: 20vh;
+}
+
+#descripcion{
+    background-color: rgba(245, 245, 245, 0.637);
+
+    /*Sombra de la caja*/
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+
+
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    height: 20%;
+}
 #caja_article1{
     width: 70%;
 }
